@@ -1,6 +1,6 @@
-# openai==0.28
-# streamlit==1.41.1
-streamlit
-openai
-langchain
-langchain_openai
+ openai==0.28
+ streamlit==1.41.1
+# streamlit
+# openai
+# langchain
+# langchain_openai
