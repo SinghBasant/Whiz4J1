@@ -5,3 +5,5 @@ openai
 langchain
 langchain_openai
 langchain-community
+pypdf
+pyPDF2
