@@ -18,8 +18,8 @@ def get_openai_response(user_input):
     except Exception as e:
         return f"Error: {e}"
 # Streamlit app
-st.title("WhizBot")
-st.write("Powered by OpenAI and Streamlit")
+st.title("WhizBot - Talk2Me:sunglasses:")
+st.write("Powered by Whizlabs R&D Squad")
 # Store chat history in session state
 if "messages" not in st.session_state:
     st.session_state.messages = []
