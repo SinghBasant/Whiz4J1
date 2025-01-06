@@ -1,6 +1,7 @@
- openai
- streamlit
+openai
+streamlit
 streamlit
 openai
 langchain
 langchain_openai
+langchain-community
