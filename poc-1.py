@@ -18,7 +18,7 @@ def get_openai_response(user_input):
     except Exception as e:
         return f"Error: {e}"
 # Streamlit app
-st.title("WhizBot - Talk2Me:sunglasses:")
+st.title("WhizBot - Talk2Me::sunglasses:")
 st.write("Powered by Whizlabs R&D Squad")
 # Store chat history in session state
 if "messages" not in st.session_state:
@@ -26,7 +26,7 @@ if "messages" not in st.session_state:
 # User input
 with st.form("chat_form", clear_on_submit=True):
     user_input = st.text_input("You:", "")
-    submitted = st.form_submit_button("Send")
+    submitted = st.form_submit_button("Submit")
 # Handle user input
 if submitted and user_input:
     st.session_state.messages.append({"role": "user", "content": user_input})
@@ -37,4 +37,4 @@ for message in st.session_state.messages:
     if message["role"] == "user":
         st.write(f"**You:** {message['content']}")
     else:
-        st.write(f"**Bot:** {message['content']}")
+        st.write(f"**WhizBot:** {message['content']}")
