@@ -11,17 +11,19 @@ import re
 openai.api_key = st.secrets["OPEN_AI_KEY"]
 
 # Streamlit UI
-st.title("Interactive MCQ Generator with Validation")
+st.title("WhizCoach :sunglasses: Interactive Practice with Validation")
 
-st.sidebar.header("Instructions")
+st.sidebar.header("Powered by Whizlabs R&D")
 st.sidebar.write("""
-1. Enter a topic and the number of MCQs to generate.
+1. Enter a topic and the number of MCQs (<=20) to generate.
 2. Select your answers.
 3. Submit your answers to validate them.
+4. You can practice with any topic: example > Generate CBSE Math linear equation word problems for grade 8th India.
+5. It's a POC - don't expect corner cases to be handled :-)
 """)
 
 # Input: Topic and number of questions
-topic = st.text_input("Enter the topic for MCQs:", "Math")
+topic = st.text_input("Enter the topic for MCQs:", "Generate practice questions for AWS Certified AI Practitioner exam")
 num_questions = st.number_input("Number of MCQs to generate:", min_value=1, max_value=20, value=5)
 
 if st.button("Generate MCQs"):
